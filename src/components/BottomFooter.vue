@@ -5,7 +5,7 @@
                 <div class="col-7 d-flex align-items-center">
                     <a class="mybtn">SING-UP NOW</a>
                 </div>
-                <div class="col-5 d-flex align-items-center">
+                <div class="col-5 d-flex align-items-center justify-content-end">
                     <h3>FOLLOW US</h3>
                     <ul class="d-flex align-items-center mt-3">
                         <li v-for="(element, index) in socials" :key="index"><a :href='element.url'><img :src="`/img/${element.icon}`" alt="element.name"></a></li>
@@ -56,7 +56,7 @@ export default {
 
 .bg-foot {
     background-color: $bgFooter;
-    height: 100px;
+    height: 87px;
 }
 
 .mybtn {
