@@ -2,13 +2,13 @@
     <div class="bg-foot">
         <div class="container-lg">
             <div class="row align-items-center">
-                <div class="col-7">
+                <div class="col-7 d-flex align-items-center">
                     <a class="mybtn">SING-UP NOW</a>
                 </div>
-                <div class="col-5 d-flex">
+                <div class="col-5 d-flex align-items-center">
                     <h3>FOLLOW US</h3>
-                    <ul class="d-flex">
-                        <li v-for="(element, index) in socials" :key="index"><a :href="`/img/${element.icon}`"><img  alt="element.name"></a></li>
+                    <ul class="d-flex align-items-center mt-3">
+                        <li v-for="(element, index) in socials" :key="index"><a :href='element.url'><img :src="`/img/${element.icon}`" alt="element.name"></a></li>
                     </ul>
                 </div>
             </div>
@@ -76,6 +76,8 @@ h3{
 ul{
     padding: 0;
     list-style: none;
-
+    li{
+        margin: 10px;
+    }
 }
 </style>
