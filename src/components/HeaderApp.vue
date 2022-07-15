@@ -1,13 +1,13 @@
 <template>
   <div>
       <div class="container-lg">
-          <div class="row py-4 ">
-              <div class="col-5">
+          <div class="row">
+              <div class="col-4 d-flex align-items-center">
                   <img src="../assets/img/dc-logo.png" alt="Main logo DC">
               </div>
-              <nav class="col-7 d-flex align-items-center justify-content-center">
-                  <ul class="fw-bolder d-flex">
-                      <li v-for="(element, index) in navList" :key="index" class="px-2" :class="{active : element.active == true}">
+              <nav class="col-8 d-flex align-items-center ">
+                  <ul class="fw-bolder d-flex justify-content-between">
+                      <li v-for="(element, index) in navList" :key="index" class="me-4 py-5" :class="{active : element.active == 'true'}">
                           {{element.section}}
                       </li>
                   </ul>
@@ -82,6 +82,7 @@ export default {
 <style scoped lang="scss">
   ul{
     list-style: none;
+    margin-bottom: 0;
     li{
 
       &:hover{
@@ -90,7 +91,8 @@ export default {
     }
   }
   .active{
-    border-bottom: 2px solid rgb(12,124,236);
+    border-bottom: 5px solid rgb(12,124,236);
     color: rgb(12,124,236);
   }
+  
 </style>
