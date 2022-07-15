@@ -5,9 +5,13 @@
               <div class="col-5">
                   <img src="../assets/img/dc-logo.png" alt="Main logo DC">
               </div>
-              <div class="col-7">
-
-              </div>
+              <nav class="col-7 d-flex align-items-center justify-content-center">
+                  <ul class="fw-bolder d-flex">
+                      <li v-for="(element, index) in navList" :key="index" class="px-2" :class="{active : element.active == true}">
+                          {{element.section}}
+                      </li>
+                  </ul>
+              </nav>
           </div>
       </div>
   </div>
@@ -76,5 +80,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  ul{
+    list-style: none;
+    li{
 
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  .active{
+    border-bottom: 2px solid rgb(12,124,236);
+    color: rgb(12,124,236);
+  }
 </style>
