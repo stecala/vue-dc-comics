@@ -3,7 +3,7 @@
       <div class="container-lg">
           <div class="row">
               <div class="col-4 d-flex align-items-center">
-                  <img src="../assets/img/dc-logo.png" alt="Main logo DC">
+                  <img src="../../public/img/dc-logo.png" alt="Main logo DC">
               </div>
               <nav class="col-8 d-flex align-items-center ">
                   <ul class="fw-bolder d-flex justify-content-between">

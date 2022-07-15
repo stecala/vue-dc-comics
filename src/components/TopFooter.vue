@@ -166,7 +166,7 @@ export default {
 .footer-container {
     width: 100%;
     height: 450px;
-    background-image: url('../assets/img/footer-bg.jpg');
+    background-image: url('../../public/img/footer-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,7 +174,7 @@ export default {
 }
 
 .img-bg {
-    background-image: url('../assets/img/dc-logo-bg.png');
+    background-image: url('../../public/img/dc-logo-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

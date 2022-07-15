@@ -8,7 +8,7 @@
                 <div class="col-5 d-flex">
                     <h3>FOLLOW US</h3>
                     <ul class="d-flex">
-                        <li v-for="(element, index) in socials" :key="index"><a :href="element.url"><img :src='`../assets/img/`+{element.icon}' alt="element.name"></a></li>
+                        <li v-for="(element, index) in socials" :key="index"><a :href="`/img/${element.icon}`"><img  alt="element.name"></a></li>
                     </ul>
                 </div>
             </div>
@@ -76,8 +76,6 @@ h3{
 ul{
     padding: 0;
     list-style: none;
-    li{
 
-    }
 }
 </style>
