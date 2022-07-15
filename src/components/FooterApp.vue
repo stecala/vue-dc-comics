@@ -1,19 +1,18 @@
 <template>
-  <footer id="IDfooter">
-    <FooterTop />
-    <FooterBottom />
+  <footer>
+    <TopFooter />
+    <BottomFooter />
   </footer>
 </template>
 
 <script>
-import FooterTop from './TopFooter.vue'
-import FooterBottom from './BottomFooter.vue'
+import TopFooter from './TopFooter.vue'
+import BottomFooter from './BottomFooter.vue'
 
 export default {
-name : 'IDfooter',
 components :{
-    FooterTop,
-    FooterBottom,
+    TopFooter,
+    BottomFooter,
   }
 }
 </script>
