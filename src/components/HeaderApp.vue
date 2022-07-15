@@ -80,6 +80,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  @import "../assets/style/variables.scss";
+
   ul{
     list-style: none;
     margin-bottom: 0;
@@ -91,8 +93,8 @@ export default {
     }
   }
   .active{
-    border-bottom: 5px solid rgb(12,124,236);
-    color: rgb(12,124,236);
+    border-bottom: 5px solid $primaryColor;
+    color: $primaryColor;
   }
   
 </style>
