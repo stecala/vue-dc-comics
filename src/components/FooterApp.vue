@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import FooterTop from './components-footer/TopFooter.vue'
-import FooterBottom from './components-footer/BottomFooter.vue'
+import FooterTop from './TopFooter.vue'
+import FooterBottom from './BottomFooter.vue'
 
 export default {
 name : 'IDfooter',
