@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <header>
       <div class="container-lg">
           <div class="row">
               <div class="col-4 d-flex align-items-center">
@@ -14,7 +14,7 @@
               </nav>
           </div>
       </div>
-  </div>
+  </header>
 </template>
 
 <script>
