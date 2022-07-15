@@ -12,6 +12,12 @@ import MainContentApp from './components/MainContentApp.vue'
 import FooterApp from './components/FooterApp.vue'
 
 export default {
+  name: 'app',
+  components :{
+    HeaderApp,
+    MainContentApp,
+    FooterApp,
+  }
 }
 </script>
 
