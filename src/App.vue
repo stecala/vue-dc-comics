@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <HeaderApp />
-
+    <MainContentApp />
+    <FooterApp />
   </div>
 </template>
 
 <script>
-import HeaderApp from './components/Header.vue'
-import MainContentApp from './components/Main.vue'
-import FooterApp from './components/Footer.vue'
+import HeaderApp from './components/HeaderApp.vue'
+import MainContentApp from './components/MainContentApp.vue'
+import FooterApp from './components/FooterApp.vue'
 
 export default {
 }
