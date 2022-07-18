@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-container-nav-main">
-        <div class="container-lg d-flex justify-content-between pt-5">
+    <div class="bg-container-nav-main d-flex">
+        <div class="container-lg d-flex justify-content-between ">
             <div v-for="(element, index) in navMainList" :key="index" class="d-flex align-items-center">
                 <div class="img-container">
                     <img :src="`/img/${element.src}`">
