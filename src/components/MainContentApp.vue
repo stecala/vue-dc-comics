@@ -1,7 +1,7 @@
 <template>
   <main class="my-bg">
     <div class="container-lg py-5">
-      <h2>Contents goes here</h2>
+      
     </div>
   </main>
 </template>

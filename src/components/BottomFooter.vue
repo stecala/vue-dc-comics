@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-foot">
+    <div class="bg-foot position-relative"> 
         <div class="container-lg">
             <div class="row align-items-center">
                 <div class="col-7 d-flex align-items-center">
@@ -13,6 +13,7 @@
                 </div>
             </div>
         </div>
+        <img src="https://www.dccomics.com/sites/default/files/files/character-pops/batman_char-pop_58910497bad9c5.66936402.png" alt="batman" class="myimg">
     </div>
 </template>
 
@@ -79,5 +80,10 @@ ul{
     li{
         margin: 10px;
     }
+}
+.myimg{
+    position: absolute;
+    top: -680px;
+    right: 0;
 }
 </style>

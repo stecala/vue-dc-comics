@@ -65,4 +65,5 @@ img{
     color: $textColorPrimary;
     width: 200px;
 }
+
 </style>
