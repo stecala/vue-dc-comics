@@ -8,7 +8,7 @@
 export default {
   data : function() {
     return {
-      active : 1,
+      active : 0,
       imagesList : [
       '/img/jumbotron.jpg',
       'https://www.dccomics.com/sites/default/files/dc-hero_20220715_GreenLanternDocClip_62d1efcb0dba15.96911971.jpg',
@@ -21,14 +21,15 @@ export default {
       this.active++
       if(this.active === this.imagesList.length){
         this.active = 0
-      }      
-      this.active = setInterval(this.active , 200)
-    
+      }    
+    },
+    startInterval(){
+          setInterval(this.changeActive, 100)
     }
   },
-  created (){
-    console.log(this.active)
-    this.changeActive()
+  created (){()=>{
+      this.startInterval()
+    }
   } 
 }
 </script>

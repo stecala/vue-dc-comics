@@ -13,6 +13,7 @@
         </div>
       </div>
       <img src="http://assets.stickpng.com/images/580b57fbd9996e24bc43c065.png" alt="superman" class="my-superman position-absolute">
+      <img src="https://www.dccomics.com/sites/default/files/files/character-pops/wonderwoman_361Wx675H_5891047fd4ced7.64432383.png" alt="wonder woman" class="wonder-woman position-absolute">
     </div>
   </main>
 </template>
@@ -143,6 +144,11 @@ h2 {
 .my-superman{
   width: 600px;
   left: -455px;
-  top: 0;
+  top: 50px;
+}
+.wonder-woman{
+  top: -400px; 
+  right: -150px;
+  transform: rotate(-25deg);
 }
 </style>
