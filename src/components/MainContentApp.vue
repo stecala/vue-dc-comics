@@ -142,7 +142,7 @@ h2 {
 }
 .my-superman{
   width: 600px;
-  left: -450px;
+  left: -455px;
   top: 0;
 }
 </style>

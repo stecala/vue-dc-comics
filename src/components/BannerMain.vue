@@ -1,21 +1,48 @@
 <template>
   <div class="banner-main">
-  
+      <img :src="imagesList[active]" >
   </div>
 </template>
 
 <script>
 export default {
-
+  data : function() {
+    return {
+      active : 1,
+      imagesList : [
+      '/img/jumbotron.jpg',
+      'https://www.dccomics.com/sites/default/files/dc-hero_20220715_GreenLanternDocClip_62d1efcb0dba15.96911971.jpg',
+      'https://www.dccomics.com/sites/default/files/dc-hero_20220715_SGWOT_62d1ef85872b78.55046194.jpg'
+      ]
+    }
+  },
+  methods: {
+    changeActive(){
+      this.active++
+      if(this.active === this.imagesList.length){
+        this.active = 0
+      }      
+      this.active = setInterval(this.active , 200)
+    
+    }
+  },
+  created (){
+    console.log(this.active)
+    this.changeActive()
+  } 
 }
 </script>
 
 <style scoped lang="scss">
 .banner-main{
-  height: 450px;
+  height: 70vh;
   width: 100%;
-  background-image: url('/Users/steca/Desktop/coding/vue-dc-comics/public/img/jumbotron.jpg');
-   background-size: cover;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
 }
 
 
