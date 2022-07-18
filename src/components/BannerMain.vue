@@ -24,12 +24,11 @@ export default {
       }    
     },
     startInterval(){
-          setInterval(this.changeActive, 100)
+          setInterval(this.changeActive, 4000)
     }
   },
-  created (){()=>{
+  created (){
       this.startInterval()
-    }
   } 
 }
 </script>
