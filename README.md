@@ -1,24 +1,5 @@
 # vue-dc-comics
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<div align="center">
+  <img width="550px" height="350px" src="https://user-images.githubusercontent.com/98908632/179537032-cab72826-55c8-4629-acc5-8a8152d2ed5d.gif">
+</div>
