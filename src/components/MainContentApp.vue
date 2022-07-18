@@ -1,14 +1,18 @@
 <template>
   <main class="my-bg">
-    <div class="container-lg py-5">
+    <div class="container-lg py-5 position-relative">
+      <div class="section-title position-absolute">
+        <div>CURRENT SERIES</div>
+      </div>
       <div class="row g-3">
         <Card v-for="(card, index) in comicsList" :key="index"
         :card="card"
         />
-        <div class="btn-cont">
-          <a class="btn">LOAD MORE</a>
+        <div class="btn-cont d-flex justify-content-center">
+          <a class="text-white">LOAD MORE</a>
         </div>
       </div>
+      <img src="http://assets.stickpng.com/images/580b57fbd9996e24bc43c065.png" alt="superman" class="my-superman position-absolute">
     </div>
   </main>
 </template>
@@ -111,8 +115,34 @@ export default {
 h2 {
   color: $textColorPrimary;
 }
-.btn-container{
+.btn-cont{
 
-  margin: 0 auto;
+  a{
+    text-decoration: none;
+    text-align: center;
+    background-color: $primaryColor;
+    width: 200px;
+    padding: 7px 0;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    }
+}
+.section-title{
+  top: -25px;
+  left: 0;
+  div{
+    width: fit-content;
+    background-color: $primaryColor;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: $textColorPrimary;
+    font-weight: bolder;
+  }
+}
+.my-superman{
+  width: 600px;
+  left: -450px;
+  top: 0;
 }
 </style>
